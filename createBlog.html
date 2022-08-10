@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- @NOTE linking firebase version 8 CDNs first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <!-- @NOTE initializing firebase -->
+    <script defer src="init-firebase.js"></script>
+
+    <!-- @NOTE linking js and css files -->
+    <script defer src="create_post.js"></script>
+    <!-- <script defer src="display_posts.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Create Firebase Blogs</title>
+</head>
+<body>
+    <div id="create-container">
+        <h1 id="title">Create a Firebase Blog</h1>
+
+        <div id="typing-container">
+            <form>
+                <!-- @NOTE this input has an id #username -->
+                <div class="input-container">
+                    <label>Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                    />
+                </div>
+
+                <!-- @NOTE this input has an id #blog-title -->
+                <div class="input-container">
+                    <label>Blog Title:</label>
+                    <input
+                        type="text"
+                        id="blog-title"
+                    />
+                </div>
+
+                <!-- @NOTE this input has an id #blog-body -->
+                <div class="body-input-container">
+                    <label>Blog Body:</label>
+                    <textarea id="blog-body" placeholder="Enter text here"></textarea>
+                </div>
+            </form>
+
+            <button id="send-btn">Create Blog</button>
+        </div>
+
+        <a href="index.html"><button id="open-blogPage-btn">Click here to view the firebase blogs</button></a>
+    </div>
+</body>
+</html>

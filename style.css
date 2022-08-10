@@ -1,0 +1,201 @@
+:root {
+    --primary: #03312E;
+    --secondary: #037171;
+    --accent: #9CFFFA;
+}
+
+body {
+    /* size and colors */
+    height: 100vh;
+    background-color: var(--primary);
+    color: #fff;
+
+    /* flexbox styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#blog-container {
+    /*
+        @NOTE using responsive units (vw and vh) here.
+        learn more here: https://www.w3schools.com/cssref/css_units.asp
+    */
+    /* size and colors */
+    width: 95vw;
+    height: 90vh;
+    background-color: var(--secondary);
+
+    /* CSS box model */
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#all-blogs {
+    /* size and colors */
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    color: #000;
+
+    /* CSS box model */
+    border-radius: 10px;
+    margin: 1%;
+
+    /* visiblity */
+    overflow-wrap: normal;
+    overflow-y: auto;
+
+    /* display in a grid */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+#create-container {
+    /* size and colors */
+    width: 95vw;
+    height: 90vh;
+    background-color: var(--secondary);
+
+    /* CSS box model */
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#typing-container {
+    /* size and colors */
+    width: 93vw;
+    height: 80vh;
+    background-color: var(--accent);
+    
+    /* CSS box model */
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+
+    /* flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    /* size and colors */
+    width: 80%;
+    height: 40%;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input, textarea {
+    width: 90%;
+    height: 90%;
+
+    font-size: 1.2em;
+    border-radius: 2px;
+}
+
+textarea {
+    resize: none;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 20vh;
+}
+
+#send-btn:hover {
+    background-color: var(--primary);
+    box-shadow: 2px 2px 2px #4d4d4d;
+    cursor: pointer;
+}
+
+#open-blogPage-btn:hover, #open-createBlogPage-btn:hover {
+    background-color: var(--secondary);
+    box-shadow: 2px 2px 2px #4d4d4d;
+    cursor: pointer;
+}
+
+#send-btn {
+    width: 15%;
+    height: 10vh;
+
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+
+    font-size: 1.2em;
+}
+
+#open-blogPage-btn, #open-createBlogPage-btn {
+    width: 20vw;
+    height: 5vh;
+
+    background-color: var(--accent);
+    border: none;
+    border-radius: 10px;
+    color: #000;
+
+    font-size: 1.2em;
+}
+
+#send-btn:active, #open-blogPage-btn:active, #open-createBlogPage-btn:active {
+    transform: scale(0.98);
+}
+
+#single-blog {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 50vw;
+}
+
+.single-blog-title {
+    font-weight: 600;
+}
+
+.single-blog p {
+    margin: 1%;
+}

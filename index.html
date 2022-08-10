@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- @NOTE linking firebase version 8 CDNs first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <!-- @NOTE initializing firebase -->
+    <script defer src="init-firebase.js"></script>
+
+    <!-- @NOTE linking js and css files -->
+    <!-- <script defer src="create_post.js"></script> -->
+    <script defer src="display_posts.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Firebase Blogs</title>
+</head>
+<body>
+    <div id="blog-container">
+        <h1 id="title">Firebase Blogs</h1>
+
+        <!-- @NOTE this is where we'll append blogs -->
+        <div id="all-blogs">
+            <!-- @NOTE sample blog -->
+            <!-- <div class="single-blog">
+                <p class="single-blog-title">Today blah blah by andymina</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Doloremque laboriosam dignissimos molestias ad illum odio
+                    dolor beatae dolore! Possimus laborum culpa debitis at
+                    obcaecati sit assumenda, placeat delectus reiciendis
+                    accusamus!
+                </p>
+            </div> -->
+        </div>
+
+        <a href="createBlog.html"><button id="open-createBlogPage-btn">Click here to create a firebase blog post</button></a>
+    </div>
+</body>
+</html>
